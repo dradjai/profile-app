@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import HeroBanner from './HeroBanner';
+import About from './components/About';
+import Footer from './components/Footer';
+import Grid from './components/Grid';
+import PictCarousel from './components/PictCarousel';
+import Quote from './components/Quote';
+import Video from './components/Video';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroBanner/>
+      <About/>
+      <Quote/>
+      <Grid/>
+      <PictCarousel/>
+      <Video/>
+      <Footer/>
+
     </div>
   );
 }
